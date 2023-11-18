@@ -2,7 +2,7 @@
 // conways_life.cpp
 // 
 // Rules for Conway's Game of Life:
-//		- Cells with 2 or fewer neighbors die of loneliness
+//		- Cells with fewer than 2 neighbors die of loneliness
 //		- Cells with 4 or more neighbors die of overcrowding
 //		- Cells with exactly 3 neighbors keep living or come back to life
 //
@@ -12,9 +12,9 @@
 //		'r' for square.
 //		't' for triangle.
 //------------------------------------------------------------------------------
-#include <windows.h>
 #include <iostream>
 #include <string>
+#include <windows.h>		// for SetConsoleCursorPosition()
 
 using namespace std;
 
